@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: personal-video-scanner
+    name: FrameGuard
     runtime: docker
     plan: free
     healthCheckPath: /health
