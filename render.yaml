@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: personal-video-scanner
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_TOKEN
+        generateValue: true
+      - key: MAX_UPLOAD_MB
+        value: "100"
+      - key: SCAN_TIMEOUT_SECONDS
+        value: "120"
+      - key: CLAMAV_ENABLED
+        value: "false"
