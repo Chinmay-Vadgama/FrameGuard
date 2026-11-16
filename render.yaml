@@ -11,5 +11,9 @@ services:
         value: "100"
       - key: SCAN_TIMEOUT_SECONDS
         value: "120"
-      - key: CLAMAV_ENABLED
+      - key: VIRUSTOTAL_ENABLED
         value: "false"
+      - key: VIRUSTOTAL_UPLOAD_UNKNOWN
+        value: "true"
+      - key: VIRUSTOTAL_API_KEY
+        sync: false
